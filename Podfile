@@ -7,6 +7,8 @@ target 'Gnotes' do
 
   # Pods for Gnotes
   
+  pod 'BNRCoreDataStack'
+
   target 'GnotesTests' do
     inherit! :search_paths
     # Pods for testing
