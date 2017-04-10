@@ -1,0 +1,444 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		30D6092F1E9B976100346A88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D6092E1E9B976100346A88 /* AppDelegate.swift */; };
+		30D609311E9B976100346A88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D609301E9B976100346A88 /* ViewController.swift */; };
+		30D609341E9B976100346A88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30D609321E9B976100346A88 /* Main.storyboard */; };
+		30D609371E9B976100346A88 /* Gnotes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 30D609351E9B976100346A88 /* Gnotes.xcdatamodeld */; };
+		30D609391E9B976100346A88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30D609381E9B976100346A88 /* Assets.xcassets */; };
+		30D6093C1E9B976100346A88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30D6093A1E9B976100346A88 /* LaunchScreen.storyboard */; };
+		30D609471E9B976100346A88 /* GnotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D609461E9B976100346A88 /* GnotesTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		30D609431E9B976100346A88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30D609231E9B976100346A88 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30D6092A1E9B976100346A88;
+			remoteInfo = Gnotes;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		30D6092B1E9B976100346A88 /* Gnotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gnotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		30D6092E1E9B976100346A88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		30D609301E9B976100346A88 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		30D609331E9B976100346A88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		30D609361E9B976100346A88 /* Gnotes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Gnotes.xcdatamodel; sourceTree = "<group>"; };
+		30D609381E9B976100346A88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		30D6093B1E9B976100346A88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		30D6093D1E9B976100346A88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30D609421E9B976100346A88 /* GnotesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GnotesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		30D609461E9B976100346A88 /* GnotesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GnotesTests.swift; sourceTree = "<group>"; };
+		30D609481E9B976100346A88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		30D609281E9B976100346A88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30D6093F1E9B976100346A88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		30D609221E9B976100346A88 = {
+			isa = PBXGroup;
+			children = (
+				30D6092D1E9B976100346A88 /* Gnotes */,
+				30D609451E9B976100346A88 /* GnotesTests */,
+				30D6092C1E9B976100346A88 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		30D6092C1E9B976100346A88 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				30D6092B1E9B976100346A88 /* Gnotes.app */,
+				30D609421E9B976100346A88 /* GnotesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		30D6092D1E9B976100346A88 /* Gnotes */ = {
+			isa = PBXGroup;
+			children = (
+				30D6092E1E9B976100346A88 /* AppDelegate.swift */,
+				30D609301E9B976100346A88 /* ViewController.swift */,
+				30D609321E9B976100346A88 /* Main.storyboard */,
+				30D609381E9B976100346A88 /* Assets.xcassets */,
+				30D6093A1E9B976100346A88 /* LaunchScreen.storyboard */,
+				30D6093D1E9B976100346A88 /* Info.plist */,
+				30D609351E9B976100346A88 /* Gnotes.xcdatamodeld */,
+			);
+			path = Gnotes;
+			sourceTree = "<group>";
+		};
+		30D609451E9B976100346A88 /* GnotesTests */ = {
+			isa = PBXGroup;
+			children = (
+				30D609461E9B976100346A88 /* GnotesTests.swift */,
+				30D609481E9B976100346A88 /* Info.plist */,
+			);
+			path = GnotesTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		30D6092A1E9B976100346A88 /* Gnotes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30D6094B1E9B976100346A88 /* Build configuration list for PBXNativeTarget "Gnotes" */;
+			buildPhases = (
+				30D609271E9B976100346A88 /* Sources */,
+				30D609281E9B976100346A88 /* Frameworks */,
+				30D609291E9B976100346A88 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Gnotes;
+			productName = Gnotes;
+			productReference = 30D6092B1E9B976100346A88 /* Gnotes.app */;
+			productType = "com.apple.product-type.application";
+		};
+		30D609411E9B976100346A88 /* GnotesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30D6094E1E9B976100346A88 /* Build configuration list for PBXNativeTarget "GnotesTests" */;
+			buildPhases = (
+				30D6093E1E9B976100346A88 /* Sources */,
+				30D6093F1E9B976100346A88 /* Frameworks */,
+				30D609401E9B976100346A88 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				30D609441E9B976100346A88 /* PBXTargetDependency */,
+			);
+			name = GnotesTests;
+			productName = GnotesTests;
+			productReference = 30D609421E9B976100346A88 /* GnotesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		30D609231E9B976100346A88 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Gautham Ilango";
+				TargetAttributes = {
+					30D6092A1E9B976100346A88 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = F6H3YUH9SY;
+						ProvisioningStyle = Automatic;
+					};
+					30D609411E9B976100346A88 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = F6H3YUH9SY;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 30D6092A1E9B976100346A88;
+					};
+				};
+			};
+			buildConfigurationList = 30D609261E9B976100346A88 /* Build configuration list for PBXProject "Gnotes" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 30D609221E9B976100346A88;
+			productRefGroup = 30D6092C1E9B976100346A88 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				30D6092A1E9B976100346A88 /* Gnotes */,
+				30D609411E9B976100346A88 /* GnotesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		30D609291E9B976100346A88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30D6093C1E9B976100346A88 /* LaunchScreen.storyboard in Resources */,
+				30D609391E9B976100346A88 /* Assets.xcassets in Resources */,
+				30D609341E9B976100346A88 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30D609401E9B976100346A88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		30D609271E9B976100346A88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30D609311E9B976100346A88 /* ViewController.swift in Sources */,
+				30D6092F1E9B976100346A88 /* AppDelegate.swift in Sources */,
+				30D609371E9B976100346A88 /* Gnotes.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30D6093E1E9B976100346A88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30D609471E9B976100346A88 /* GnotesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		30D609441E9B976100346A88 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 30D6092A1E9B976100346A88 /* Gnotes */;
+			targetProxy = 30D609431E9B976100346A88 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		30D609321E9B976100346A88 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30D609331E9B976100346A88 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		30D6093A1E9B976100346A88 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30D6093B1E9B976100346A88 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		30D609491E9B976100346A88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		30D6094A1E9B976100346A88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		30D6094C1E9B976100346A88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = F6H3YUH9SY;
+				INFOPLIST_FILE = Gnotes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iGautham.Gnotes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		30D6094D1E9B976100346A88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = F6H3YUH9SY;
+				INFOPLIST_FILE = Gnotes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iGautham.Gnotes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		30D6094F1E9B976100346A88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = F6H3YUH9SY;
+				INFOPLIST_FILE = GnotesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iGautham.GnotesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gnotes.app/Gnotes";
+			};
+			name = Debug;
+		};
+		30D609501E9B976100346A88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = F6H3YUH9SY;
+				INFOPLIST_FILE = GnotesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iGautham.GnotesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gnotes.app/Gnotes";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		30D609261E9B976100346A88 /* Build configuration list for PBXProject "Gnotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30D609491E9B976100346A88 /* Debug */,
+				30D6094A1E9B976100346A88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30D6094B1E9B976100346A88 /* Build configuration list for PBXNativeTarget "Gnotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30D6094C1E9B976100346A88 /* Debug */,
+				30D6094D1E9B976100346A88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		30D6094E1E9B976100346A88 /* Build configuration list for PBXNativeTarget "GnotesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30D6094F1E9B976100346A88 /* Debug */,
+				30D609501E9B976100346A88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		30D609351E9B976100346A88 /* Gnotes.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				30D609361E9B976100346A88 /* Gnotes.xcdatamodel */,
+			);
+			currentVersion = 30D609361E9B976100346A88 /* Gnotes.xcdatamodel */;
+			path = Gnotes.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 30D609231E9B976100346A88 /* Project object */;
+}
