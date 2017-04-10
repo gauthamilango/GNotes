@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		30D6092F1E9B976100346A88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D6092E1E9B976100346A88 /* AppDelegate.swift */; };
-		30D609311E9B976100346A88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D609301E9B976100346A88 /* ViewController.swift */; };
+		30D609311E9B976100346A88 /* FolderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D609301E9B976100346A88 /* FolderViewController.swift */; };
 		30D609341E9B976100346A88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30D609321E9B976100346A88 /* Main.storyboard */; };
 		30D609371E9B976100346A88 /* Gnotes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 30D609351E9B976100346A88 /* Gnotes.xcdatamodeld */; };
 		30D609391E9B976100346A88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30D609381E9B976100346A88 /* Assets.xcassets */; };
@@ -29,7 +29,7 @@
 /* Begin PBXFileReference section */
 		30D6092B1E9B976100346A88 /* Gnotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gnotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30D6092E1E9B976100346A88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		30D609301E9B976100346A88 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		30D609301E9B976100346A88 /* FolderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderViewController.swift; sourceTree = "<group>"; };
 		30D609331E9B976100346A88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		30D609361E9B976100346A88 /* Gnotes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Gnotes.xcdatamodel; sourceTree = "<group>"; };
 		30D609381E9B976100346A88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -80,7 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				30D6092E1E9B976100346A88 /* AppDelegate.swift */,
-				30D609301E9B976100346A88 /* ViewController.swift */,
+				30D609301E9B976100346A88 /* FolderViewController.swift */,
 				30D609321E9B976100346A88 /* Main.storyboard */,
 				30D609381E9B976100346A88 /* Assets.xcassets */,
 				30D6093A1E9B976100346A88 /* LaunchScreen.storyboard */,
@@ -204,7 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30D609311E9B976100346A88 /* ViewController.swift in Sources */,
+				30D609311E9B976100346A88 /* FolderViewController.swift in Sources */,
 				30D6092F1E9B976100346A88 /* AppDelegate.swift in Sources */,
 				30D609371E9B976100346A88 /* Gnotes.xcdatamodeld in Sources */,
 			);
@@ -416,6 +416,7 @@
 				30D6094D1E9B976100346A88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		30D6094E1E9B976100346A88 /* Build configuration list for PBXNativeTarget "GnotesTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +425,7 @@
 				30D609501E9B976100346A88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
