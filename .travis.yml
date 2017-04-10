@@ -2,4 +2,4 @@ language: objective-c
 osx_image: xcode8.3
 xcode_sdk: iphonesimulator10.3
 script:
-    - xcodebuild clean build -sdk iphonesimulator10.3 -project Gnotes.xcodeproj -scheme Gnotes CODE_SIGNING_REQUIRED=NO
+    - xcodebuild test -sdk iphonesimulator10.3 -project Gnotes.xcodeproj -scheme Gnotes -destination 'platform=iOS Simulator,name=iPhone 7 Plus,OS=10.3'
