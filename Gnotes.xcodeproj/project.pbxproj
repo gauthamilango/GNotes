@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		309CF7171E9BEDA900C5236B /* Folder+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309CF7151E9BEDA900C5236B /* Folder+CoreDataClass.swift */; };
+		309CF7181E9BEDA900C5236B /* Folder+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309CF7161E9BEDA900C5236B /* Folder+CoreDataProperties.swift */; };
+		309CF7201E9BEFAD00C5236B /* FolderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309CF71F1E9BEFAD00C5236B /* FolderViewModel.swift */; };
+		309CF7231E9BEFE300C5236B /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309CF7221E9BEFE300C5236B /* ViewModelProtocol.swift */; };
 		30D6092F1E9B976100346A88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D6092E1E9B976100346A88 /* AppDelegate.swift */; };
 		30D609311E9B976100346A88 /* FolderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D609301E9B976100346A88 /* FolderViewController.swift */; };
 		30D609341E9B976100346A88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30D609321E9B976100346A88 /* Main.storyboard */; };
@@ -27,6 +31,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		309CF7151E9BEDA900C5236B /* Folder+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Folder+CoreDataClass.swift"; sourceTree = "<group>"; };
+		309CF7161E9BEDA900C5236B /* Folder+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Folder+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		309CF71F1E9BEFAD00C5236B /* FolderViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FolderViewModel.swift; sourceTree = "<group>"; };
+		309CF7221E9BEFE300C5236B /* ViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
 		30D6092B1E9B976100346A88 /* Gnotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gnotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30D6092E1E9B976100346A88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30D609301E9B976100346A88 /* FolderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +66,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		309CF7191E9BEDC600C5236B /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				30D609351E9B976100346A88 /* Gnotes.xcdatamodeld */,
+				309CF7161E9BEDA900C5236B /* Folder+CoreDataProperties.swift */,
+				309CF7151E9BEDA900C5236B /* Folder+CoreDataClass.swift */,
+			);
+			name = DataModels;
+			sourceTree = "<group>";
+		};
+		309CF71A1E9BEDD300C5236B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				30D609301E9B976100346A88 /* FolderViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		309CF71B1E9BEDF800C5236B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				309CF71C1E9BEE1600C5236B /* Storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		309CF71C1E9BEE1600C5236B /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				30D6093A1E9B976100346A88 /* LaunchScreen.storyboard */,
+				30D609321E9B976100346A88 /* Main.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		309CF71E1E9BEF4D00C5236B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				309CF71F1E9BEFAD00C5236B /* FolderViewModel.swift */,
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
+		309CF7211E9BEFC700C5236B /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				309CF7221E9BEFE300C5236B /* ViewModelProtocol.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
 		30D609221E9B976100346A88 = {
 			isa = PBXGroup;
 			children = (
@@ -79,13 +138,14 @@
 		30D6092D1E9B976100346A88 /* Gnotes */ = {
 			isa = PBXGroup;
 			children = (
+				309CF7211E9BEFC700C5236B /* Protocols */,
+				309CF71A1E9BEDD300C5236B /* ViewControllers */,
+				309CF7191E9BEDC600C5236B /* DataModels */,
+				309CF71B1E9BEDF800C5236B /* Views */,
+				309CF71E1E9BEF4D00C5236B /* ViewModels */,
 				30D6092E1E9B976100346A88 /* AppDelegate.swift */,
-				30D609301E9B976100346A88 /* FolderViewController.swift */,
-				30D609321E9B976100346A88 /* Main.storyboard */,
 				30D609381E9B976100346A88 /* Assets.xcassets */,
-				30D6093A1E9B976100346A88 /* LaunchScreen.storyboard */,
 				30D6093D1E9B976100346A88 /* Info.plist */,
-				30D609351E9B976100346A88 /* Gnotes.xcdatamodeld */,
 			);
 			path = Gnotes;
 			sourceTree = "<group>";
@@ -204,8 +264,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				309CF7201E9BEFAD00C5236B /* FolderViewModel.swift in Sources */,
 				30D609311E9B976100346A88 /* FolderViewController.swift in Sources */,
+				309CF7171E9BEDA900C5236B /* Folder+CoreDataClass.swift in Sources */,
 				30D6092F1E9B976100346A88 /* AppDelegate.swift in Sources */,
+				309CF7231E9BEFE300C5236B /* ViewModelProtocol.swift in Sources */,
+				309CF7181E9BEDA900C5236B /* Folder+CoreDataProperties.swift in Sources */,
 				30D609371E9B976100346A88 /* Gnotes.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

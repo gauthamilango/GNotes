@@ -35,11 +35,14 @@ class FolderViewController: UIViewController {
 extension FolderViewController: UITableViewDataSource {
   
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return 0
+    return 1
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = UITableViewCell()
+    if indexPath.row == 0 {
+      cell.textLabel?.text = "All"
+    }
     return cell
   }
 }
