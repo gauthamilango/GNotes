@@ -1,9 +1,9 @@
 //
 //  Folder+CoreDataProperties.swift
-//  Gnotes
+//  
 //
-//  Created by Gautham Ilango on 10/04/17.
-//  Copyright © 2017 Gautham Ilango. All rights reserved.
+//  Created by Gautham Ilango on 11/04/17.
+//
 //
 
 import Foundation
@@ -17,5 +17,6 @@ extension Folder {
     }
 
     @NSManaged public var title: String?
+    @NSManaged public var createdDate: NSDate?
 
 }
