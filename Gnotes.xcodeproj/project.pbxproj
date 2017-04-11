@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		305B60AA1E9CE2CE00946B54 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305B60A91E9CE2CE00946B54 /* CoreDataStack.swift */; };
 		309CF7171E9BEDA900C5236B /* Folder+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309CF7151E9BEDA900C5236B /* Folder+CoreDataClass.swift */; };
 		309CF7181E9BEDA900C5236B /* Folder+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309CF7161E9BEDA900C5236B /* Folder+CoreDataProperties.swift */; };
 		309CF7201E9BEFAD00C5236B /* FolderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309CF71F1E9BEFAD00C5236B /* FolderViewModel.swift */; };
@@ -33,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		305B60A91E9CE2CE00946B54 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		309CF7151E9BEDA900C5236B /* Folder+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Folder+CoreDataClass.swift"; sourceTree = "<group>"; };
 		309CF7161E9BEDA900C5236B /* Folder+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Folder+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		309CF71F1E9BEFAD00C5236B /* FolderViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FolderViewModel.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				30D609351E9B976100346A88 /* Gnotes.xcdatamodeld */,
 				309CF7161E9BEDA900C5236B /* Folder+CoreDataProperties.swift */,
 				309CF7151E9BEDA900C5236B /* Folder+CoreDataClass.swift */,
+				305B60A91E9CE2CE00946B54 /* CoreDataStack.swift */,
 			);
 			name = DataModels;
 			sourceTree = "<group>";
@@ -402,6 +405,7 @@
 				309CF7231E9BEFE300C5236B /* ViewModelProtocol.swift in Sources */,
 				309CF7181E9BEDA900C5236B /* Folder+CoreDataProperties.swift in Sources */,
 				30D609371E9B976100346A88 /* Gnotes.xcdatamodeld in Sources */,
+				305B60AA1E9CE2CE00946B54 /* CoreDataStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
