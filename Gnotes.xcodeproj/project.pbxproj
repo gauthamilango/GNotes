@@ -10,6 +10,8 @@
 		305B60AA1E9CE2CE00946B54 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305B60A91E9CE2CE00946B54 /* CoreDataStack.swift */; };
 		305B60AF1E9CED1400946B54 /* Folder+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305B60AD1E9CED1400946B54 /* Folder+CoreDataClass.swift */; };
 		305B60B01E9CED1400946B54 /* Folder+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305B60AE1E9CED1400946B54 /* Folder+CoreDataProperties.swift */; };
+		308CC9FF1E9D4DEF00087494 /* FolderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308CC9FE1E9D4DEF00087494 /* FolderTableViewCell.swift */; };
+		308CCA011E9D4F3D00087494 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308CCA001E9D4F3D00087494 /* Constants.swift */; };
 		309CF7201E9BEFAD00C5236B /* FolderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309CF71F1E9BEFAD00C5236B /* FolderViewModel.swift */; };
 		309CF7231E9BEFE300C5236B /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309CF7221E9BEFE300C5236B /* ViewModelProtocol.swift */; };
 		30D6092F1E9B976100346A88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D6092E1E9B976100346A88 /* AppDelegate.swift */; };
@@ -37,6 +39,8 @@
 		305B60A91E9CE2CE00946B54 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		305B60AD1E9CED1400946B54 /* Folder+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Folder+CoreDataClass.swift"; sourceTree = "<group>"; };
 		305B60AE1E9CED1400946B54 /* Folder+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Folder+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		308CC9FE1E9D4DEF00087494 /* FolderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FolderTableViewCell.swift; sourceTree = "<group>"; };
+		308CCA001E9D4F3D00087494 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		309CF71F1E9BEFAD00C5236B /* FolderViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FolderViewModel.swift; sourceTree = "<group>"; };
 		309CF7221E9BEFE300C5236B /* ViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
 		30D6092B1E9B976100346A88 /* Gnotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gnotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +82,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		308CC9FC1E9D4DBF00087494 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				308CC9FE1E9D4DEF00087494 /* FolderTableViewCell.swift */,
+			);
+			name = TableViewCells;
+			sourceTree = "<group>";
+		};
 		309CF7191E9BEDC600C5236B /* DataModels */ = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +112,7 @@
 		309CF71B1E9BEDF800C5236B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				308CC9FC1E9D4DBF00087494 /* TableViewCells */,
 				309CF71C1E9BEE1600C5236B /* Storyboard */,
 			);
 			name = Views;
@@ -159,6 +172,7 @@
 				309CF71B1E9BEDF800C5236B /* Views */,
 				309CF71E1E9BEF4D00C5236B /* ViewModels */,
 				30D6092E1E9B976100346A88 /* AppDelegate.swift */,
+				308CCA001E9D4F3D00087494 /* Constants.swift */,
 				30D609381E9B976100346A88 /* Assets.xcassets */,
 				30D6093D1E9B976100346A88 /* Info.plist */,
 			);
@@ -403,6 +417,8 @@
 				305B60AF1E9CED1400946B54 /* Folder+CoreDataClass.swift in Sources */,
 				30D609311E9B976100346A88 /* FolderViewController.swift in Sources */,
 				30D6092F1E9B976100346A88 /* AppDelegate.swift in Sources */,
+				308CCA011E9D4F3D00087494 /* Constants.swift in Sources */,
+				308CC9FF1E9D4DEF00087494 /* FolderTableViewCell.swift in Sources */,
 				309CF7231E9BEFE300C5236B /* ViewModelProtocol.swift in Sources */,
 				30D609371E9B976100346A88 /* Gnotes.xcdatamodeld in Sources */,
 				305B60AA1E9CE2CE00946B54 /* CoreDataStack.swift in Sources */,

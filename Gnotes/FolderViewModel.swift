@@ -15,6 +15,10 @@ class FolderViewModel : ViewModelProtocol {
     return folder.title ?? ""
   }
   
+  var notesCount: Int {
+    return 0
+  }
+  
   init(folder: Folder) {
     self.folder = folder
   }
