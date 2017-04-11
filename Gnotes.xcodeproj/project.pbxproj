@@ -7,13 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		309CF7171E9BEDA900C5236B /* Folder+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309CF7151E9BEDA900C5236B /* Folder+CoreDataClass.swift */; };
+		309CF7181E9BEDA900C5236B /* Folder+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309CF7161E9BEDA900C5236B /* Folder+CoreDataProperties.swift */; };
+		309CF7201E9BEFAD00C5236B /* FolderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309CF71F1E9BEFAD00C5236B /* FolderViewModel.swift */; };
+		309CF7231E9BEFE300C5236B /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309CF7221E9BEFE300C5236B /* ViewModelProtocol.swift */; };
 		30D6092F1E9B976100346A88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D6092E1E9B976100346A88 /* AppDelegate.swift */; };
-		30D609311E9B976100346A88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D609301E9B976100346A88 /* ViewController.swift */; };
+		30D609311E9B976100346A88 /* FolderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D609301E9B976100346A88 /* FolderViewController.swift */; };
 		30D609341E9B976100346A88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30D609321E9B976100346A88 /* Main.storyboard */; };
 		30D609371E9B976100346A88 /* Gnotes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 30D609351E9B976100346A88 /* Gnotes.xcdatamodeld */; };
 		30D609391E9B976100346A88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30D609381E9B976100346A88 /* Assets.xcassets */; };
 		30D6093C1E9B976100346A88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30D6093A1E9B976100346A88 /* LaunchScreen.storyboard */; };
 		30D609471E9B976100346A88 /* GnotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D609461E9B976100346A88 /* GnotesTests.swift */; };
+		60E7AB5FCB0BF8CF789DE3E4 /* Pods_Gnotes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFFB5E12105B5F87DA4C572B /* Pods_Gnotes.framework */; };
+		DF2B23F28BA36183EB3FEF34 /* Pods_GnotesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC242042B951B2B8189BB6D2 /* Pods_GnotesTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,9 +33,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		309CF7151E9BEDA900C5236B /* Folder+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Folder+CoreDataClass.swift"; sourceTree = "<group>"; };
+		309CF7161E9BEDA900C5236B /* Folder+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Folder+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		309CF71F1E9BEFAD00C5236B /* FolderViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FolderViewModel.swift; sourceTree = "<group>"; };
+		309CF7221E9BEFE300C5236B /* ViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
 		30D6092B1E9B976100346A88 /* Gnotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gnotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30D6092E1E9B976100346A88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		30D609301E9B976100346A88 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		30D609301E9B976100346A88 /* FolderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderViewController.swift; sourceTree = "<group>"; };
 		30D609331E9B976100346A88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		30D609361E9B976100346A88 /* Gnotes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Gnotes.xcdatamodel; sourceTree = "<group>"; };
 		30D609381E9B976100346A88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -38,6 +48,12 @@
 		30D609421E9B976100346A88 /* GnotesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GnotesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		30D609461E9B976100346A88 /* GnotesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GnotesTests.swift; sourceTree = "<group>"; };
 		30D609481E9B976100346A88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38FE9E2DE6A5F072CD53E03D /* Pods-Gnotes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gnotes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gnotes/Pods-Gnotes.debug.xcconfig"; sourceTree = "<group>"; };
+		BD3E107E36D9CC39D2000A63 /* Pods-GnotesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GnotesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GnotesTests/Pods-GnotesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DC242042B951B2B8189BB6D2 /* Pods_GnotesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GnotesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC8B4711D168EE9B343E1B7A /* Pods-Gnotes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gnotes.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gnotes/Pods-Gnotes.release.xcconfig"; sourceTree = "<group>"; };
+		EFFB5E12105B5F87DA4C572B /* Pods_Gnotes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gnotes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB05A5DF1B5C166D4FF89E51 /* Pods-GnotesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GnotesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GnotesTests/Pods-GnotesTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60E7AB5FCB0BF8CF789DE3E4 /* Pods_Gnotes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,18 +69,72 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF2B23F28BA36183EB3FEF34 /* Pods_GnotesTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		309CF7191E9BEDC600C5236B /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				30D609351E9B976100346A88 /* Gnotes.xcdatamodeld */,
+				309CF7161E9BEDA900C5236B /* Folder+CoreDataProperties.swift */,
+				309CF7151E9BEDA900C5236B /* Folder+CoreDataClass.swift */,
+			);
+			name = DataModels;
+			sourceTree = "<group>";
+		};
+		309CF71A1E9BEDD300C5236B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				30D609301E9B976100346A88 /* FolderViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		309CF71B1E9BEDF800C5236B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				309CF71C1E9BEE1600C5236B /* Storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		309CF71C1E9BEE1600C5236B /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				30D6093A1E9B976100346A88 /* LaunchScreen.storyboard */,
+				30D609321E9B976100346A88 /* Main.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		309CF71E1E9BEF4D00C5236B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				309CF71F1E9BEFAD00C5236B /* FolderViewModel.swift */,
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
+		309CF7211E9BEFC700C5236B /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				309CF7221E9BEFE300C5236B /* ViewModelProtocol.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
 		30D609221E9B976100346A88 = {
 			isa = PBXGroup;
 			children = (
 				30D6092D1E9B976100346A88 /* Gnotes */,
 				30D609451E9B976100346A88 /* GnotesTests */,
 				30D6092C1E9B976100346A88 /* Products */,
+				D47B20EA4BB2F48F859745E7 /* Pods */,
+				447B284F355A0294B5AD5E9F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,13 +150,14 @@
 		30D6092D1E9B976100346A88 /* Gnotes */ = {
 			isa = PBXGroup;
 			children = (
+				309CF7211E9BEFC700C5236B /* Protocols */,
+				309CF71A1E9BEDD300C5236B /* ViewControllers */,
+				309CF7191E9BEDC600C5236B /* DataModels */,
+				309CF71B1E9BEDF800C5236B /* Views */,
+				309CF71E1E9BEF4D00C5236B /* ViewModels */,
 				30D6092E1E9B976100346A88 /* AppDelegate.swift */,
-				30D609301E9B976100346A88 /* ViewController.swift */,
-				30D609321E9B976100346A88 /* Main.storyboard */,
 				30D609381E9B976100346A88 /* Assets.xcassets */,
-				30D6093A1E9B976100346A88 /* LaunchScreen.storyboard */,
 				30D6093D1E9B976100346A88 /* Info.plist */,
-				30D609351E9B976100346A88 /* Gnotes.xcdatamodeld */,
 			);
 			path = Gnotes;
 			sourceTree = "<group>";
@@ -99,6 +171,26 @@
 			path = GnotesTests;
 			sourceTree = "<group>";
 		};
+		447B284F355A0294B5AD5E9F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EFFB5E12105B5F87DA4C572B /* Pods_Gnotes.framework */,
+				DC242042B951B2B8189BB6D2 /* Pods_GnotesTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D47B20EA4BB2F48F859745E7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				38FE9E2DE6A5F072CD53E03D /* Pods-Gnotes.debug.xcconfig */,
+				DC8B4711D168EE9B343E1B7A /* Pods-Gnotes.release.xcconfig */,
+				BD3E107E36D9CC39D2000A63 /* Pods-GnotesTests.debug.xcconfig */,
+				FB05A5DF1B5C166D4FF89E51 /* Pods-GnotesTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +198,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 30D6094B1E9B976100346A88 /* Build configuration list for PBXNativeTarget "Gnotes" */;
 			buildPhases = (
+				F7CC111EA7EEBDF239013CE4 /* [CP] Check Pods Manifest.lock */,
 				30D609271E9B976100346A88 /* Sources */,
 				30D609281E9B976100346A88 /* Frameworks */,
 				30D609291E9B976100346A88 /* Resources */,
+				6C43BB5BB5CFB2A0A3172604 /* [CP] Embed Pods Frameworks */,
+				0A3841C19FF51B63677E6073 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,9 +218,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 30D6094E1E9B976100346A88 /* Build configuration list for PBXNativeTarget "GnotesTests" */;
 			buildPhases = (
+				6B1684940D0C0ED0B164F462 /* [CP] Check Pods Manifest.lock */,
 				30D6093E1E9B976100346A88 /* Sources */,
 				30D6093F1E9B976100346A88 /* Frameworks */,
 				30D609401E9B976100346A88 /* Resources */,
+				ACE28E701949ACCA91EA62BA /* [CP] Embed Pods Frameworks */,
+				437E9EAB0A69CECB11779139 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -199,13 +297,110 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0A3841C19FF51B63677E6073 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gnotes/Pods-Gnotes-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		437E9EAB0A69CECB11779139 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GnotesTests/Pods-GnotesTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B1684940D0C0ED0B164F462 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6C43BB5BB5CFB2A0A3172604 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gnotes/Pods-Gnotes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ACE28E701949ACCA91EA62BA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GnotesTests/Pods-GnotesTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7CC111EA7EEBDF239013CE4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		30D609271E9B976100346A88 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30D609311E9B976100346A88 /* ViewController.swift in Sources */,
+				309CF7201E9BEFAD00C5236B /* FolderViewModel.swift in Sources */,
+				30D609311E9B976100346A88 /* FolderViewController.swift in Sources */,
+				309CF7171E9BEDA900C5236B /* Folder+CoreDataClass.swift in Sources */,
 				30D6092F1E9B976100346A88 /* AppDelegate.swift in Sources */,
+				309CF7231E9BEFE300C5236B /* ViewModelProtocol.swift in Sources */,
+				309CF7181E9BEDA900C5236B /* Folder+CoreDataProperties.swift in Sources */,
 				30D609371E9B976100346A88 /* Gnotes.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,6 +538,7 @@
 		};
 		30D6094C1E9B976100346A88 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38FE9E2DE6A5F072CD53E03D /* Pods-Gnotes.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = F6H3YUH9SY;
@@ -356,6 +552,7 @@
 		};
 		30D6094D1E9B976100346A88 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC8B4711D168EE9B343E1B7A /* Pods-Gnotes.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = F6H3YUH9SY;
@@ -369,6 +566,7 @@
 		};
 		30D6094F1E9B976100346A88 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD3E107E36D9CC39D2000A63 /* Pods-GnotesTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -384,6 +582,7 @@
 		};
 		30D609501E9B976100346A88 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB05A5DF1B5C166D4FF89E51 /* Pods-GnotesTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -416,6 +615,7 @@
 				30D6094D1E9B976100346A88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		30D6094E1E9B976100346A88 /* Build configuration list for PBXNativeTarget "GnotesTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +624,7 @@
 				30D609501E9B976100346A88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
