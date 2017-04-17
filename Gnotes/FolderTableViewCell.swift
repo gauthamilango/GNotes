@@ -9,7 +9,9 @@
 import UIKit
 
 class FolderTableViewCell: UITableViewCell {
-
+  
+  @IBOutlet weak var detailLabel: UILabel!
+  @IBOutlet weak var titleLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -17,9 +19,13 @@ class FolderTableViewCell: UITableViewCell {
   
   func configure(with viewModel: ViewModelProtocol) {
     if let folderViewModel = viewModel as? FolderViewModel {
-      textLabel?.text = folderViewModel.title
-      detailTextLabel?.text = "(\(folderViewModel.notesCount))"
+      titleLabel?.text = folderViewModel.title
+      detailLabel?.text = "\(folderViewModel.notesCount)"
     }
+  }
+  
+  override func setEditing(_ editing: Bool, animated: Bool) {
+    super.setEditing(editing, animated: animated)
   }
 
 }
