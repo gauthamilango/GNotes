@@ -42,7 +42,7 @@ class AppModel {
   ///
   /// - Parameter title: The Title of the new folder
   /// - Returns: New Folder on success, nil if failed
-  func createFolder(with title: String) -> Folder? {
+  func createFolder(with title: String?) -> Folder? {
     let newFolder = Folder(context: CoreDataStack.shared.mainContext)
     newFolder.title = title
     if let _ = coreDataStack.saveContext() {
