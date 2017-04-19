@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		300A264A1EA72AC40084E2B4 /* NoteListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300A26491EA72AC40084E2B4 /* NoteListViewController.swift */; };
 		305B60AA1E9CE2CE00946B54 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305B60A91E9CE2CE00946B54 /* CoreDataStack.swift */; };
 		305B60AF1E9CED1400946B54 /* Folder+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305B60AD1E9CED1400946B54 /* Folder+CoreDataClass.swift */; };
 		305B60B01E9CED1400946B54 /* Folder+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305B60AE1E9CED1400946B54 /* Folder+CoreDataProperties.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		300A26491EA72AC40084E2B4 /* NoteListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteListViewController.swift; sourceTree = "<group>"; };
 		305B60A91E9CE2CE00946B54 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		305B60AD1E9CED1400946B54 /* Folder+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Folder+CoreDataClass.swift"; sourceTree = "<group>"; };
 		305B60AE1E9CED1400946B54 /* Folder+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Folder+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				30D609301E9B976100346A88 /* FolderListViewController.swift */,
+				300A26491EA72AC40084E2B4 /* NoteListViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -412,6 +415,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				300A264A1EA72AC40084E2B4 /* NoteListViewController.swift in Sources */,
 				309CF7201E9BEFAD00C5236B /* FolderViewModel.swift in Sources */,
 				305B60B01E9CED1400946B54 /* Folder+CoreDataProperties.swift in Sources */,
 				305B60AF1E9CED1400946B54 /* Folder+CoreDataClass.swift in Sources */,

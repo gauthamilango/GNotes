@@ -17,6 +17,7 @@ class FolderListViewController: UIViewController {
   fileprivate var deleteFolderBarButtonItem: UIBarButtonItem!
   
   fileprivate var folders = [FolderViewModel]()
+  fileprivate var selectedFolderViewModel: FolderViewModel?
   fileprivate weak var saveAction: UIAlertAction?
 
   
@@ -33,14 +34,22 @@ class FolderListViewController: UIViewController {
     // Configure the bar buttons
     updateToolBarButtonsToMatchWithTableState()
 
-    
-    // Do any additional setup after loading the view, typically from a nib.
   }
+  
   
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     tableView.reloadData()
   }
+  
+  
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    if segue.identifier == Constants.SegueIdentifier.showNoteListViewController, let destinationNoteListViewController = segue.destination as? NoteListViewController {
+      destinationNoteListViewController.folderViewModel = selectedFolderViewModel
+      selectedFolderViewModel = nil
+    }
+  }
+  
   
   func reload() {
     
@@ -58,6 +67,7 @@ class FolderListViewController: UIViewController {
     
   }
   
+  
   func updateToolBarButtonsToMatchWithTableState() {
     // Delete button if the tableview is being edited or New Folder button if the tableView is not being edited
     let flexibleSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
@@ -69,11 +79,7 @@ class FolderListViewController: UIViewController {
     }
     
   }
-
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
-  }
+  
   
   override func setEditing(_ editing: Bool, animated: Bool) {
     // Set the tableView to editing mode based on the view's editing mode and configure the bar buttons
@@ -83,6 +89,7 @@ class FolderListViewController: UIViewController {
     
   }
 
+  
   func newFolderButtonTapped(_ sender: Any) {
     
     // Display alert controller with textField for creating new folder
@@ -115,6 +122,7 @@ class FolderListViewController: UIViewController {
     present(alertController, animated: true, completion: nil)
   }
   
+  
   func deleteButtonTapped(_ sender: Any) {
     // Delete the selected rows
     if let toDeleteRows = tableView.indexPathsForSelectedRows {
@@ -133,19 +141,26 @@ class FolderListViewController: UIViewController {
     }
   }
   
+  
   func textFieldDidChange(_ textField: UITextField) {
     // Check the alertController's textfield is not empty and enable the save button
     saveAction?.isEnabled = ((textField.text ?? "").utf16.count > 0)
   }
+  
+  
 }
+
+
 
 // MARK: - TableViewDataSourceDelegate
 
 extension FolderListViewController: UITableViewDataSource {
   
+  
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return folders.count + 1
   }
+  
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     
@@ -160,7 +175,12 @@ extension FolderListViewController: UITableViewDataSource {
     return cell
     
   }
+  
+  
 }
+
+
+
 
 // MARK: - TableViewDelegate
 
@@ -177,6 +197,9 @@ extension FolderListViewController: UITableViewDelegate {
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     if tableView.isEditing, tableView.indexPathsForSelectedRows != nil {
       deleteFolderBarButtonItem.isEnabled = true
+    } else {
+      selectedFolderViewModel = indexPath.row == 0 ? nil : folders[indexPath.row - 1]
+      performSegue(withIdentifier: Constants.SegueIdentifier.showNoteListViewController, sender: self)
     }
   }
   
@@ -188,9 +211,12 @@ extension FolderListViewController: UITableViewDelegate {
   
 }
 
+
+
 // MARK: - FolderTableViewCellDelegate
 
 extension FolderListViewController: FolderTableViewCellDelegate {
+  
   
   func folderHasBeenTapped(_ folderViewModel: FolderViewModel?) {
     
@@ -225,16 +251,23 @@ extension FolderListViewController: FolderTableViewCellDelegate {
       
     } else {
       // Consider it selected and show the notes list view controller
+      selectedFolderViewModel = folderViewModel
+      performSegue(withIdentifier: Constants.SegueIdentifier.showNoteListViewController, sender: self)
     }
   }
   
+  
 }
+
+
 
 // MARK: - TextFieldDelegate
 
 extension FolderListViewController: UITextFieldDelegate {
+  
   func textFieldDidBeginEditing(_ textField: UITextField) {
     // For highlighting the text when the folder is being renamed
     textField.selectedTextRange = textField.textRange(from: textField.beginningOfDocument, to: textField.endOfDocument)
   }
+  
 }

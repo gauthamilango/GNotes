@@ -12,4 +12,8 @@ struct Constants {
   struct TableViewCellIdentifier {
     static let folderTableViewCell = "folderTableViewCell"
   }
+  
+  struct SegueIdentifier {
+    static let showNoteListViewController = "showNoteListViewController"
+  }
 }
