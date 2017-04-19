@@ -9,7 +9,7 @@
 import UIKit
 import BNRCoreDataStack
 
-class FolderViewController: UIViewController {
+class FolderListViewController: UIViewController {
   
   @IBOutlet fileprivate weak var tableView: UITableView!
   
@@ -19,18 +19,18 @@ class FolderViewController: UIViewController {
   fileprivate var folders = [FolderViewModel]()
   fileprivate weak var saveAction: UIAlertAction?
 
-
-  
-  
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    // Reload the data
     reload()
-    navigationItem.rightBarButtonItem = editButtonItem
     
+    // Setup the bar buttons
+    navigationItem.rightBarButtonItem = editButtonItem
     newFolderBarButtonItem = UIBarButtonItem(title: NSLocalizedString("New Folder", comment: "new folder"), style: .plain, target: self, action: #selector(newFolderButtonTapped(_:)))
     deleteFolderBarButtonItem = UIBarButtonItem(title: NSLocalizedString("Delete", comment: "delete"), style: .plain, target: self, action: #selector(deleteButtonTapped(_:)))
     
+    // Configure the bar buttons
     updateToolBarButtonsToMatchWithTableState()
 
     
@@ -43,8 +43,8 @@ class FolderViewController: UIViewController {
   }
   
   func reload() {
+    
     do {
-      
       folders = try Folder.allInContext(CoreDataStack.shared.mainContext)
         .sorted { (folderOne, folderTwo) -> Bool in
           return folderOne.createdDate?.timeIntervalSince1970 ?? 0 < folderTwo.createdDate?.timeIntervalSince1970 ?? 0
@@ -55,9 +55,11 @@ class FolderViewController: UIViewController {
       print(error.localizedDescription)
     }
     tableView.reloadData()
+    
   }
   
   func updateToolBarButtonsToMatchWithTableState() {
+    // Delete button if the tableview is being edited or New Folder button if the tableView is not being edited
     let flexibleSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
     if tableView.isEditing {
       deleteFolderBarButtonItem.isEnabled = false
@@ -65,6 +67,7 @@ class FolderViewController: UIViewController {
     } else {
       setToolbarItems([flexibleSpace, newFolderBarButtonItem], animated: true)
     }
+    
   }
 
   override func didReceiveMemoryWarning() {
@@ -73,21 +76,26 @@ class FolderViewController: UIViewController {
   }
   
   override func setEditing(_ editing: Bool, animated: Bool) {
+    // Set the tableView to editing mode based on the view's editing mode and configure the bar buttons
     super.setEditing(editing, animated: animated)
     tableView.setEditing(!tableView.isEditing, animated: true)
     updateToolBarButtonsToMatchWithTableState()
+    
   }
 
   func newFolderButtonTapped(_ sender: Any) {
     
+    // Display alert controller with textField for creating new folder
     let alertController = UIAlertController(title: NSLocalizedString("New Folder", comment: "New Folder"), message: NSLocalizedString("Enter a name for this folder", comment: "Enter a name for this folder"), preferredStyle: .alert)
     
     let saveAction = UIAlertAction(title: NSLocalizedString("Save", comment: "Save"), style: .default) { (action) in
+      // Create new folder with the given name and save it
       let newFolderTitle = alertController.textFields?.first?.text
       let newFolder = Folder(context: CoreDataStack.shared.mainContext)
       newFolder.title = newFolderTitle
       CoreDataStack.shared.saveContext()
       self.reload()
+      
     }
     
     let cancelAction = UIAlertAction(title: NSLocalizedString("Cancel", comment: "Cancel"), style: .cancel, handler: nil)
@@ -108,6 +116,7 @@ class FolderViewController: UIViewController {
   }
   
   func deleteButtonTapped(_ sender: Any) {
+    // Delete the selected rows
     if let toDeleteRows = tableView.indexPathsForSelectedRows {
       for indexPath in toDeleteRows {
         let folderViewModel = folders[indexPath.row - 1]
@@ -125,33 +134,37 @@ class FolderViewController: UIViewController {
   }
   
   func textFieldDidChange(_ textField: UITextField) {
+    // Check the alertController's textfield is not empty and enable the save button
     saveAction?.isEnabled = ((textField.text ?? "").utf16.count > 0)
   }
 }
 
 // MARK: - TableViewDataSourceDelegate
 
-extension FolderViewController: UITableViewDataSource {
+extension FolderListViewController: UITableViewDataSource {
   
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return folders.count + 1
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCell(withIdentifier: "\(Constants.TableViewCellIdentifier.folderTableViewCell)2") as! FolderTableViewCell
+    
+    let cell = tableView.dequeueReusableCell(withIdentifier: Constants.TableViewCellIdentifier.folderTableViewCell) as! FolderTableViewCell
     if indexPath.row == 0 {
       cell.titleLabel?.text = "All"
       cell.detailLabel?.text = "\(0)"
     } else {
       cell.configure(with: folders[indexPath.row - 1])
+      cell.delegate = self
     }
     return cell
+    
   }
 }
 
 // MARK: - TableViewDelegate
 
-extension FolderViewController: UITableViewDelegate {
+extension FolderListViewController: UITableViewDelegate {
   
   func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCellEditingStyle {
     return .delete
@@ -173,4 +186,55 @@ extension FolderViewController: UITableViewDelegate {
     }
   }
   
+}
+
+// MARK: - FolderTableViewCellDelegate
+
+extension FolderListViewController: FolderTableViewCellDelegate {
+  
+  func folderHasBeenTapped(_ folderViewModel: FolderViewModel?) {
+    
+    if tableView.isEditing, let folderViewModel = folderViewModel {
+      // Display alert controller with textField for renaming the folder
+
+      let alertController = UIAlertController(title: NSLocalizedString("Rename Folder", comment: "Rename Folder"), message: NSLocalizedString("Enter a new name for this folder", comment: "Enter a new name for this folder"), preferredStyle: .alert)
+      
+      let saveAction = UIAlertAction(title: NSLocalizedString("Save", comment: "Save"), style: .default) { (action) in
+        let newFolderTitle = alertController.textFields?.first?.text
+        folderViewModel.title = newFolderTitle ?? ""
+        CoreDataStack.shared.saveContext()
+        self.reload()
+      }
+      
+      let cancelAction = UIAlertAction(title: NSLocalizedString("Cancel", comment: "Cancel"), style: .cancel, handler: nil)
+      
+      alertController.addAction(saveAction)
+      alertController.addAction(cancelAction)
+      
+      self.saveAction = saveAction
+      
+      alertController.addTextField { (textField) in
+        textField.text = folderViewModel.title
+        textField.placeholder = NSLocalizedString("Name", comment: "Name")
+        textField.clearButtonMode = .whileEditing
+        textField .addTarget(self, action: #selector(self.textFieldDidChange(_:)), for: .editingChanged)
+        textField.delegate = self
+      }
+      
+      present(alertController, animated: true, completion: nil)
+      
+    } else {
+      // Consider it selected and show the notes list view controller
+    }
+  }
+  
+}
+
+// MARK: - TextFieldDelegate
+
+extension FolderListViewController: UITextFieldDelegate {
+  func textFieldDidBeginEditing(_ textField: UITextField) {
+    // For highlighting the text when the folder is being renamed
+    textField.selectedTextRange = textField.textRange(from: textField.beginningOfDocument, to: textField.endOfDocument)
+  }
 }

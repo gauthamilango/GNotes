@@ -12,7 +12,13 @@ class FolderViewModel : ViewModelProtocol {
   var folder: Folder
   
   var title: String {
+    get {
     return folder.title ?? ""
+    }
+    
+    set {
+      folder.title = newValue
+    }
   }
   
   var notesCount: Int {

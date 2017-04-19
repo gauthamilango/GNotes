@@ -15,7 +15,7 @@
 		309CF7201E9BEFAD00C5236B /* FolderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309CF71F1E9BEFAD00C5236B /* FolderViewModel.swift */; };
 		309CF7231E9BEFE300C5236B /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309CF7221E9BEFE300C5236B /* ViewModelProtocol.swift */; };
 		30D6092F1E9B976100346A88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D6092E1E9B976100346A88 /* AppDelegate.swift */; };
-		30D609311E9B976100346A88 /* FolderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D609301E9B976100346A88 /* FolderViewController.swift */; };
+		30D609311E9B976100346A88 /* FolderListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D609301E9B976100346A88 /* FolderListViewController.swift */; };
 		30D609341E9B976100346A88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30D609321E9B976100346A88 /* Main.storyboard */; };
 		30D609371E9B976100346A88 /* Gnotes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 30D609351E9B976100346A88 /* Gnotes.xcdatamodeld */; };
 		30D609391E9B976100346A88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30D609381E9B976100346A88 /* Assets.xcassets */; };
@@ -45,7 +45,7 @@
 		309CF7221E9BEFE300C5236B /* ViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
 		30D6092B1E9B976100346A88 /* Gnotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gnotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30D6092E1E9B976100346A88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		30D609301E9B976100346A88 /* FolderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderViewController.swift; sourceTree = "<group>"; };
+		30D609301E9B976100346A88 /* FolderListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderListViewController.swift; sourceTree = "<group>"; };
 		30D609331E9B976100346A88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		30D609361E9B976100346A88 /* Gnotes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Gnotes.xcdatamodel; sourceTree = "<group>"; };
 		30D609381E9B976100346A88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -104,7 +104,7 @@
 		309CF71A1E9BEDD300C5236B /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				30D609301E9B976100346A88 /* FolderViewController.swift */,
+				30D609301E9B976100346A88 /* FolderListViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -415,7 +415,7 @@
 				309CF7201E9BEFAD00C5236B /* FolderViewModel.swift in Sources */,
 				305B60B01E9CED1400946B54 /* Folder+CoreDataProperties.swift in Sources */,
 				305B60AF1E9CED1400946B54 /* Folder+CoreDataClass.swift in Sources */,
-				30D609311E9B976100346A88 /* FolderViewController.swift in Sources */,
+				30D609311E9B976100346A88 /* FolderListViewController.swift in Sources */,
 				30D6092F1E9B976100346A88 /* AppDelegate.swift in Sources */,
 				308CCA011E9D4F3D00087494 /* Constants.swift in Sources */,
 				308CC9FF1E9D4DEF00087494 /* FolderTableViewCell.swift in Sources */,
