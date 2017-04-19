@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import BNRCoreDataStack
 
 class FolderListViewController: UIViewController {
   
@@ -98,9 +97,10 @@ class FolderListViewController: UIViewController {
     let saveAction = UIAlertAction(title: NSLocalizedString("Save", comment: "Save"), style: .default) { (action) in
       // Create new folder with the given name and save it
       let newFolderTitle = alertController.textFields?.first?.text
-      let newFolder = Folder(context: CoreDataStack.shared.mainContext)
-      newFolder.title = newFolderTitle
-      CoreDataStack.shared.saveContext()
+      let appModel = AppModel.shared
+      if appModel.createFolder(with: newFolderTitle) == nil {
+        // TODO: Alert
+      }
       self.reload()
       
     }
@@ -126,16 +126,18 @@ class FolderListViewController: UIViewController {
   func deleteButtonTapped(_ sender: Any) {
     // Delete the selected rows
     if let toDeleteRows = tableView.indexPathsForSelectedRows {
+      var folderViewModelsToBeDeleted = [FolderViewModel]()
       for indexPath in toDeleteRows {
-        let folderViewModel = folders[indexPath.row - 1]
-        CoreDataStack.shared.mainContext.delete(folderViewModel.folder)
+        folderViewModelsToBeDeleted.append(folders[indexPath.row - 1])
       }
       
       let indexesTobeDeleted = toDeleteRows.map{$0.row - 1}.sorted(by: { $0 > $1 })
       for index in indexesTobeDeleted {
         folders.remove(at: index)
       }
-      CoreDataStack.shared.saveContext()
+      if AppModel.shared.delete(folderViewModels: folderViewModelsToBeDeleted) != true {
+        // TODO: Alert on deletion failure
+      }
       tableView.deleteRows(at: toDeleteRows, with: .automatic)
       isEditing = false
     }
@@ -227,8 +229,9 @@ extension FolderListViewController: FolderTableViewCellDelegate {
       
       let saveAction = UIAlertAction(title: NSLocalizedString("Save", comment: "Save"), style: .default) { (action) in
         let newFolderTitle = alertController.textFields?.first?.text
-        folderViewModel.title = newFolderTitle ?? ""
-        CoreDataStack.shared.saveContext()
+        if AppModel.shared.update(folderViewModel: folderViewModel, with: newFolderTitle ?? "") != true {
+          // TODO: Alert on failure of updation
+        }
         self.reload()
       }
       
