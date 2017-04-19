@@ -22,6 +22,7 @@
 		30D609391E9B976100346A88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30D609381E9B976100346A88 /* Assets.xcassets */; };
 		30D6093C1E9B976100346A88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30D6093A1E9B976100346A88 /* LaunchScreen.storyboard */; };
 		30D609471E9B976100346A88 /* GnotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D609461E9B976100346A88 /* GnotesTests.swift */; };
+		30D7983F1EA733FB00FA454F /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D7983E1EA733FB00FA454F /* AppModel.swift */; };
 		60E7AB5FCB0BF8CF789DE3E4 /* Pods_Gnotes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFFB5E12105B5F87DA4C572B /* Pods_Gnotes.framework */; };
 		DF2B23F28BA36183EB3FEF34 /* Pods_GnotesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC242042B951B2B8189BB6D2 /* Pods_GnotesTests.framework */; };
 /* End PBXBuildFile section */
@@ -56,6 +57,7 @@
 		30D609421E9B976100346A88 /* GnotesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GnotesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		30D609461E9B976100346A88 /* GnotesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GnotesTests.swift; sourceTree = "<group>"; };
 		30D609481E9B976100346A88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30D7983E1EA733FB00FA454F /* AppModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
 		38FE9E2DE6A5F072CD53E03D /* Pods-Gnotes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gnotes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gnotes/Pods-Gnotes.debug.xcconfig"; sourceTree = "<group>"; };
 		BD3E107E36D9CC39D2000A63 /* Pods-GnotesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GnotesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GnotesTests/Pods-GnotesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DC242042B951B2B8189BB6D2 /* Pods_GnotesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GnotesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -169,6 +171,7 @@
 		30D6092D1E9B976100346A88 /* Gnotes */ = {
 			isa = PBXGroup;
 			children = (
+				30D7983D1EA733DD00FA454F /* App Model */,
 				309CF7211E9BEFC700C5236B /* Protocols */,
 				309CF71A1E9BEDD300C5236B /* ViewControllers */,
 				309CF7191E9BEDC600C5236B /* DataModels */,
@@ -189,6 +192,14 @@
 				30D609481E9B976100346A88 /* Info.plist */,
 			);
 			path = GnotesTests;
+			sourceTree = "<group>";
+		};
+		30D7983D1EA733DD00FA454F /* App Model */ = {
+			isa = PBXGroup;
+			children = (
+				30D7983E1EA733FB00FA454F /* AppModel.swift */,
+			);
+			name = "App Model";
 			sourceTree = "<group>";
 		};
 		447B284F355A0294B5AD5E9F /* Frameworks */ = {
@@ -422,6 +433,7 @@
 				30D609311E9B976100346A88 /* FolderListViewController.swift in Sources */,
 				30D6092F1E9B976100346A88 /* AppDelegate.swift in Sources */,
 				308CCA011E9D4F3D00087494 /* Constants.swift in Sources */,
+				30D7983F1EA733FB00FA454F /* AppModel.swift in Sources */,
 				308CC9FF1E9D4DEF00087494 /* FolderTableViewCell.swift in Sources */,
 				309CF7231E9BEFE300C5236B /* ViewModelProtocol.swift in Sources */,
 				30D609371E9B976100346A88 /* Gnotes.xcdatamodeld in Sources */,
