@@ -1,9 +1,9 @@
 //
 //  Folder+CoreDataClass.swift
-//  Gnotes
+//  
 //
-//  Created by Gautham Ilango on 10/04/17.
-//  Copyright © 2017 Gautham Ilango. All rights reserved.
+//  Created by Gautham Ilango on 11/04/17.
+//
 //
 
 import Foundation
@@ -12,4 +12,8 @@ import CoreData
 @objc(Folder)
 public class Folder: NSManagedObject {
 
+  override public init(entity: NSEntityDescription, insertInto context: NSManagedObjectContext?) {
+    super.init(entity: entity, insertInto: context)
+    createdDate = Date() as NSDate
+  }
 }
