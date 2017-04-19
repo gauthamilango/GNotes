@@ -11,33 +11,53 @@ import XCTest
 
 class GnotesTests: XCTestCase {
   
-   var coreDataStack: CoreDataStack!
+  var appModel: AppModel!
 		
-    override func setUp() {
-        super.setUp()
-      coreDataStack = CoreDataStack.shared
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-      coreDataStack = nil
-        super.tearDown()
-    }
-    
+  override func setUp() {
+    super.setUp()
+    appModel = AppModel.shared
+    // Put setup code here. This method is called before the invocation of each test method in the class.
+  }
+  
+  override func tearDown() {
+    // Put teardown code here. This method is called after the invocation of each test method in the class.
+    appModel = nil
+    super.tearDown()
+  }
+  
   func testCreationDateOfFolder() {
-    let folder = Folder(context: coreDataStack.mainContext)
-    let expectation = XCTestExpectation(description: "Folder's Created Date assigned")
-    if folder.createdDate != nil {
-      expectation.fulfill()
+    if let folder = appModel.createFolder(with: "Test Folder") {
+      let expectation = XCTestExpectation(description: "Folder's Creation Date assigned")
+      if folder.createdDate != nil {
+        expectation.fulfill()
+      }
     }
   }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+  
+  func testDeletionOfFolder() {
+    if let folder = appModel.createFolder(with: "Test Folder") {
+      let expectation = XCTestExpectation(description: "Folder Deletion")
+      if appModel.delete(folderViewModels: [FolderViewModel(folder: folder)]) {
+        expectation.fulfill()
+      }
     }
-    
+  }
+  
+  func testUpdationOfFolder() {
+    if let folder = appModel.createFolder(with: "Test Folder") {
+      let expectation = XCTestExpectation(description: "Folder Title Updation")
+      let folderViewModel = FolderViewModel(folder: folder)
+      if appModel.update(folderViewModel: folderViewModel, with: "Updated Test Folder Title"), folder.title ==  "Updated Test Folder Title"{
+        expectation.fulfill()
+      }
+    }
+  }
+  
+  func testPerformanceExample() {
+    // This is an example of a performance test case.
+    self.measure {
+      // Put the code you want to measure the time of here.
+    }
+  }
+  
 }
