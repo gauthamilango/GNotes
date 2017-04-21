@@ -3,8 +3,17 @@
     <entity name="Folder" representedClassName="Folder" syncable="YES">
         <attribute name="createdDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="notes" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Note" inverseName="folder" inverseEntity="Note" syncable="YES"/>
+    </entity>
+    <entity name="Note" representedClassName="Note" syncable="YES">
+        <attribute name="createdDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="updatedDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="folder" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Folder" inverseName="notes" inverseEntity="Folder" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Folder" positionX="-63" positionY="-18" width="128" height="75"/>
+        <element name="Folder" positionX="-63" positionY="-18" width="128" height="90"/>
+        <element name="Note" positionX="-63" positionY="0" width="128" height="120"/>
     </elements>
 </model>
