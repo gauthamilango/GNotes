@@ -22,7 +22,7 @@ class FolderViewModel : ViewModelProtocol {
   }
   
   var notesCount: Int {
-    return 0
+    return folder.notes?.count ?? 0
   }
   
   init(folder: Folder) {
