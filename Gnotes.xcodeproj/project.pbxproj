@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		300A264A1EA72AC40084E2B4 /* NoteListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300A26491EA72AC40084E2B4 /* NoteListViewController.swift */; };
+		301B16A81EA9F2C7000ED426 /* Note+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301B16A61EA9F2C7000ED426 /* Note+CoreDataClass.swift */; };
+		301B16A91EA9F2C7000ED426 /* Note+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301B16A71EA9F2C7000ED426 /* Note+CoreDataProperties.swift */; };
 		305B60AA1E9CE2CE00946B54 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305B60A91E9CE2CE00946B54 /* CoreDataStack.swift */; };
 		305B60AF1E9CED1400946B54 /* Folder+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305B60AD1E9CED1400946B54 /* Folder+CoreDataClass.swift */; };
 		305B60B01E9CED1400946B54 /* Folder+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305B60AE1E9CED1400946B54 /* Folder+CoreDataProperties.swift */; };
@@ -39,6 +41,8 @@
 
 /* Begin PBXFileReference section */
 		300A26491EA72AC40084E2B4 /* NoteListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteListViewController.swift; sourceTree = "<group>"; };
+		301B16A61EA9F2C7000ED426 /* Note+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataClass.swift"; sourceTree = "<group>"; };
+		301B16A71EA9F2C7000ED426 /* Note+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		305B60A91E9CE2CE00946B54 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		305B60AD1E9CED1400946B54 /* Folder+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Folder+CoreDataClass.swift"; sourceTree = "<group>"; };
 		305B60AE1E9CED1400946B54 /* Folder+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Folder+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -100,6 +104,8 @@
 				30D609351E9B976100346A88 /* Gnotes.xcdatamodeld */,
 				305B60AD1E9CED1400946B54 /* Folder+CoreDataClass.swift */,
 				305B60AE1E9CED1400946B54 /* Folder+CoreDataProperties.swift */,
+				301B16A61EA9F2C7000ED426 /* Note+CoreDataClass.swift */,
+				301B16A71EA9F2C7000ED426 /* Note+CoreDataProperties.swift */,
 				305B60A91E9CE2CE00946B54 /* CoreDataStack.swift */,
 			);
 			name = DataModels;
@@ -427,12 +433,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				300A264A1EA72AC40084E2B4 /* NoteListViewController.swift in Sources */,
+				301B16A91EA9F2C7000ED426 /* Note+CoreDataProperties.swift in Sources */,
 				309CF7201E9BEFAD00C5236B /* FolderViewModel.swift in Sources */,
 				305B60B01E9CED1400946B54 /* Folder+CoreDataProperties.swift in Sources */,
 				305B60AF1E9CED1400946B54 /* Folder+CoreDataClass.swift in Sources */,
 				30D609311E9B976100346A88 /* FolderListViewController.swift in Sources */,
 				30D6092F1E9B976100346A88 /* AppDelegate.swift in Sources */,
 				308CCA011E9D4F3D00087494 /* Constants.swift in Sources */,
+				301B16A81EA9F2C7000ED426 /* Note+CoreDataClass.swift in Sources */,
 				30D7983F1EA733FB00FA454F /* AppModel.swift in Sources */,
 				308CC9FF1E9D4DEF00087494 /* FolderTableViewCell.swift in Sources */,
 				309CF7231E9BEFE300C5236B /* ViewModelProtocol.swift in Sources */,
